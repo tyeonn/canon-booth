@@ -6,9 +6,14 @@ import Splash from './splash';
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route path='/' component={Splash}></Route>
-      </Switch>
+
+      <div className='app-main'>
+        <Switch>
+          <Route path='/photo' component={}
+          <Route path='/' component={Splash}></Route>
+        </Switch>
+      </div>
+
     </div>
   );
 }
