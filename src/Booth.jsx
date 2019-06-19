@@ -14,12 +14,8 @@ class Booth extends React.Component {
         // debugger
         var interval = setInterval(() => {
             document.location.reload();
-            // console.log(this.state.tick);
-            // this.setState({
-            //     tick: this.state.tick + 1,
-            //     img: "http://172.20.10.13:8080/ccapi/ver100/shooting/liveview/flip"
-            // })
-        }, 1000);
+        
+        }, 1500);
     }
 
     render() {
