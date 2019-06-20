@@ -11,6 +11,10 @@ class Settings extends React.Component {
         // };
     }
 
+    handleChange(field) {
+
+    }
+
     render() {
         return (
             <div className="settings-page">
@@ -24,22 +28,20 @@ class Settings extends React.Component {
                 </div>
                 <div className="settings-options">
                     <div className="settings-left-side">
-                        <p>Saturation</p>
-                        <p>Highlights</p>
-                        <p>Polarization</p>
-                        <p>Aperature</p>
-                        <p>Brightness</p>
-                        <p>Contrast</p>
+                        <p>AV</p>
+                        <p>TV</p>
+                        <p>ISO</p>
+                        <p>Exposure</p>
+                        <p>White Balance</p>
                         {/* <p>Shutter&nbsp;Speed</p> */}
                     </div>
                     <div className="settings-right-side">
                         <div className="settings-toggle-bar">
-                            <SettingsOptions number={50} />
-                            <SettingsOptions number={42} />
-                            <SettingsOptions number={71} />
-                            <SettingsOptions number={28} />
-                            <SettingsOptions number={63} />
-                            <SettingsOptions number={25} />
+                            <SettingsOptions number={50} field="AV"/>
+                            <SettingsOptions number={42} field="TV"/>
+                            <SettingsOptions number={71} field="ISO"/>
+                            <SettingsOptions number={28} field="Exposure"/>
+                            <SettingsOptions number={63} field="White Balance"/>
                         </div>
                         {/* <div className="settings-toggle-bar"></div> */}
                     </div>
