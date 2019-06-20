@@ -48,6 +48,9 @@ class Settings extends React.Component {
                         {/* <div className="settings-toggle-bar"></div> */}
                     </div>
                 </div>
+                <div className="settings-fotter">
+                    
+                </div>
             </div>
         )
     }
