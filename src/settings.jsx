@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderBar from './settings_option';
+// import SliderBar from './settings_option';
 import SettingsOptions from './settings_option';
 
 class Settings extends React.Component {

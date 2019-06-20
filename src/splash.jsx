@@ -7,7 +7,7 @@ function splash() {
   return (
     <div className='splash-container'>
       <header>
-        <img src={logo} className='App-logo' alt=""/>
+        <img src={logo} className='App-logoo' alt=""/>
       </header>
 
       <Link to="/photo">Begin Session</Link>
