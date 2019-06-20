@@ -320,3 +320,16 @@ a:visited {
 #end {
   color: red;
 }
+
+.gallery-img {
+  width: 25vw;
+  height: calc(25vw * 3 / 4);
+  padding: 2vw;
+}
+
+#gallery-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
