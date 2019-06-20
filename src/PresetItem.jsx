@@ -4,7 +4,7 @@ function PresetItem(prop) {
 
     return (
         <div className="preset-image-container">
-            <img className="preset-image" src={prop.url}></img>
+            <img alt="" className="preset-image" src={prop.url}/>
             <div className="preset-details">
                 <h1 className="preset-title">{prop.title}</h1>
                 <div className="red-line"></div>

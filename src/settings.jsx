@@ -1,20 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import SliderBar from './settings_option';
 import SettingsOptions from './settings_option';
 
 class Settings extends React.Component {
-    constructor(props) {
-        super(props);
-
-        // this.state = {
-        //     show: false
-        // };
-    }
-
-    handleChange(field) {
-
-    }
 
     render() {
         return (
@@ -49,7 +37,7 @@ class Settings extends React.Component {
                     </div>
                 </div>
                 <div className="settings-fotter">
-                    
+
                 </div>
             </div>
         )

@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-rangeslider';
 import 'react-rangeslider/lib/index.css';
-import { bigIntLiteral } from '@babel/types';
 
 class SettingsOptions extends React.Component {
     constructor(props, context) {
@@ -40,6 +39,8 @@ class SettingsOptions extends React.Component {
                 ranges: settings["wb"]["ability"]
             })
             break;
+        default:
+            break;
        }
     }
 
@@ -76,6 +77,8 @@ class SettingsOptions extends React.Component {
             case "Exposure" : 
                 break; 
             case "White Balance" : 
+                break;
+            default:
                 break;
         }
     }
