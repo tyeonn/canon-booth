@@ -44,29 +44,30 @@ class SettingsOptions extends React.Component {
     }
 
     handleOnChange = (value) => {
-        // let header = new Headers({
-        //     'Access-Control-Allow-Origin':'*',
-        //     'Access-Control-Allow-Headers' : 'X-Requested-With',
-        //     'Access-Control-Allow-Methods' : 'POST, GET, PUT, DELETE, OPTIONS'
-        // });
+        this.setState({
+            number: value
+        })
         // let defaultOptions = {
+        //     url:'',
         //     method:'PUT',
         //     mode: 'cors',
-        //     headers: header,
-        //     body: JSON.stringify({
-        //         value: settings["av"][100/value]
-        //     }),
+        //     headers:{
+        //     'Access-Control-Allow-Origin':'*'
+        //     },
+        //     body:null,
         // };
         // this.setState({
         //     number: value
         // })
         switch(this.state.field) {
             case "AV" : 
-                // fetch("http://172.20.10.13:8080/ccapi/ver100/shooting/settings/av")
-                //     .then(resp => resp.json()) 
-                //     .then(data => {
-                //         debugger 
-                //     })
+                // fetch("http://192.168.1.2:8080/ccapi/ver100/shooting/settings/av", {
+                //     method: "PUT",
+                //     body: JSON.stringify({
+                //         value: settings["av"][100/value]
+                //     }),
+                //     // mode: "no-cors"
+                // })
                 break;
             case "TV" :
                 break;

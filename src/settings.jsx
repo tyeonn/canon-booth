@@ -37,11 +37,11 @@ class Settings extends React.Component {
                     </div>
                     <div className="settings-right-side">
                         <div className="settings-toggle-bar">
-                            <SettingsOptions number={50} field="AV"/>
-                            <SettingsOptions number={42} field="TV"/>
-                            <SettingsOptions number={71} field="ISO"/>
-                            <SettingsOptions number={28} field="Exposure"/>
-                            <SettingsOptions number={63} field="White Balance"/>
+                            <SettingsOptions number={60} field="AV"/>
+                            <SettingsOptions number={44} field="TV"/>
+                            <SettingsOptions number={40} field="ISO"/>
+                            <SettingsOptions number={75} field="Exposure"/>
+                            <SettingsOptions number={20} field="White Balance"/>
                         </div>
                         {/* <div className="settings-toggle-bar"></div> */}
                     </div>
