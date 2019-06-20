@@ -59,6 +59,7 @@ a:visited {
 }
 
 .settings-top {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -129,18 +130,35 @@ a:visited {
 
 /* PHONE NAV CSS */
 
+.end-session-button {
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: white;
+  width: 86px;
+  height: 35px;
+  /* border-radius: 5px; */
+  border: solid 1px #979797;
+  background-color: #ff0000;
+  position: absolute;
+  right: 15px;
+}
+
 .phone-nav {
   position: sticky;
   top: 0px;
   border-bottom: 2px solid #fafafa;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
 .phone-nav-logo {
     max-width: 150px;
     max-height: 60px;
+    display: flex;
+    justify-self: center;
 }
 
 .preset-image-container {
@@ -207,6 +225,7 @@ a:visited {
 }
 
 .phone-info-bar {
+  z-index: -1;
   background-color: #ff0000;
   height: 63px;
   display: flex;
@@ -238,4 +257,66 @@ a:visited {
   margin: 0 auto;
   background: lightgray;
   border-radius: 50%;
+}
+
+/* END MODAL */
+
+.modal-overlay {
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(0,0,0,0.2);
+  height: 667px;
+  width: 375px;
+}
+
+.end-modal {
+  z-index: 10 !important; 
+  border: 1px solid grey;
+  background-color: #fafafa;
+  position: absolute;
+  top: 300px;
+  left: 60px;
+  height: 130px;
+  width: 250px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.end-modal-text {
+  color: rgb(39, 39, 39);
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: -25px;
+}
+
+.modal-button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  width: 125px;
+  font-size: 16px;
+  border: 1px solid #c2c2c2;
+  background-color: #fafafa;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#cancel {
+  color: rgb(35, 89, 206);
+}
+
+#end {
+  color: red;
 }
