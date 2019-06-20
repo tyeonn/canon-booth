@@ -6,11 +6,10 @@ function splash() {
 
   return (
     <div className='splash-container'>
-      <header>
-        <img src={logo} className='App-logo' alt=""/>
-      </header>
-
-      <Link to="/photo">Begin Session</Link>
+      <div className="splash-options">
+        <img src={logo} className='App-logo' alt="" />
+        <button className="begin-session-button"><Link className="begin-session-link" to="/phone">Begin Session</Link></button>
+      </div>
     </div>
   )
 }

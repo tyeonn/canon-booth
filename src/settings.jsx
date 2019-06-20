@@ -1,23 +1,17 @@
 import React from 'react';
-import SliderBar from './settings_option';
 import SettingsOptions from './settings_option';
+import upload from './images/upload.png';
+import UploadModal from './UploadModal';
 
 class Settings extends React.Component {
-    constructor(props) {
-        super(props);
-
-        // this.state = {
-        //     show: false
-        // };
-    }
 
     render() {
         return (
             <div className="settings-page">
                 <div className="settings-top">
-                    <h2 className="settings-title">Lifestyle</h2>
-                    <p className="settings-text">Adjust the filters and see how you look on the photobooth screen! Once you're satisfied, just take a picture using the shutter button below.</p>
+                    <h2 className="settings-title">Lifestyle&nbsp;<UploadModal /></h2>
                 </div>
+                <p className="settings-text">Adjust the filters and see how you look on the photobooth screen! Once you're satisfied, just take a picture using the shutter button below.</p>
                 <div className="settings-options">
                     <div className="settings-left-side">
                         <p>Saturation</p>
