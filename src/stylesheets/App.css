@@ -57,7 +57,7 @@
 
 .settings-left-side p {
   display: block;
-  left: 0;
+  padding-top: 10px;
   margin-left: 10px;
   margin-bottom: 50px;
   max-width: 100px;
@@ -71,16 +71,14 @@
 .settings-right-side {
   display: block;
   margin-left: 10px;
-  margin-bottom: 40px;
 }
 
-/* .settings-option-item {
-  display: block;
-} */
+.settings-toggle-bar {
+  margin-bottom: 35px;
+}
 
 .settings-option-item-each {
-  /* padding-bottom: 5px; */
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .settings-option-item-numbers {
@@ -98,6 +96,11 @@
   height: 10px;
   width: 200px;
   flex-direction: column;
+}
+
+.settings-slider {
+  margin-bottom: 68px;
+  width: 200px;
 }
 
 @keyframes App-logo-spin {

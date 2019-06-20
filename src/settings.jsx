@@ -1,4 +1,5 @@
 import React from 'react';
+import SliderBar from './settings_option';
 import SettingsOptions from './settings_option';
 
 class Settings extends React.Component {
@@ -29,6 +30,11 @@ class Settings extends React.Component {
                     </div>
                     <div className="settings-right-side">
                         <div className="settings-toggle-bar">
+                            <SettingsOptions />
+                            <SettingsOptions />
+                            <SettingsOptions />
+                            <SettingsOptions />
+                            <SettingsOptions />
                             <SettingsOptions />
                         </div>
                         {/* <div className="settings-toggle-bar"></div> */}
