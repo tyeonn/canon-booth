@@ -15,10 +15,10 @@ function App() {
       <Switch>
         {/* <Route path='/' component={Splash}></Route> */}
         <Route exact path='/phone' component={PresetIndex}></Route>
-        <Route path='/test' component={Booth}></Route>
+        <Route path='/booth' component={Booth}></Route>
         <Route exact path='/' component={Splash}></Route>
         <Route exact path='/phone/settings' component={Settings}></Route>
-        <Route exact path='/gallery' component={Gallery}></Route>
+        <Route exact path='/phone/gallery' component={Gallery}></Route>
       </Switch>
     </div>
   );

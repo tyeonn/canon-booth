@@ -453,9 +453,10 @@ a:visited {
 }
 
 .gallery-img {
-  width: 25vw;
-  height: calc(25vw * 3 / 4);
-  padding: 2vw;
+  width: calc((100vh - 62px - 15vw) * 4 / 3);
+  height: calc(100vh - 62px - 15vw);
+  margin-left: calc(50vw - (100vh - 62px - 15vw) * 2 / 3);
+  overflow: hidden;
 }
 
 #gallery-container {
@@ -463,4 +464,29 @@ a:visited {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#gallery-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 15vw;
+  background: red;
+  color: white;
+}
+
+#gallery-nav > .icon-chevron {
+  position: relative;
+  margin: 0;
+}
+
+#nav-header {
+  font-weight: 300;
+}
+
+#gallery-upload {
+  height: 11vw;
+  width: 11vw;
+  filter: invert(1)
 }

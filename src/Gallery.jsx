@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import upload from './images/upload.png';
 
 class Gallery extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            images: [],
+            image: [],
         }
     }
 
@@ -14,18 +16,20 @@ class Gallery extends React.Component {
             .then(resp => resp.json())
             .then(data => {
                 this.setState({
-                    images: data["url"]
+                    image: data["url"][data["url"].length - 1]
                 }) 
             })
     }
 
     render() {
-        const imgs = this.state.images.map(img => {
-            return <img className="gallery-img" src={img}></img>
-        })
 
         return <div id="gallery-container"> 
-            {imgs}
+            <div id="gallery-nav">
+                <h1 className="icon-chevron"><Link to="/phone">{'<'}</Link></h1>
+                <h1 id="nav-header">Photos (Lifestyle)</h1>
+                <img src={upload} id="gallery-upload"></img>
+            </div>
+            <img src={this.state.image} className="gallery-img"></img>
         </div>
     }
 

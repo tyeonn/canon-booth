@@ -6,6 +6,20 @@ import Professional from './images/professional.png';
 
 class Settings extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.snapPic = this.snapPic.bind(this);
+    }
+
+    snapPic(url) {
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                af: true
+            })
+        })
+    }
+
     render() {
         return (
             <div className="settings-page">
@@ -41,8 +55,8 @@ class Settings extends React.Component {
                     </div>
                 </div>
                 <div className="settings-footer">
-                    <div className="gallery-button"><img className="gallery-preview" src={Professional} alt=""/></div>
-                    <button className="camera-button"><div className="inner-circle"></div></button>
+                    <Link to="/phone/gallery" className="gallery-button"><img className="gallery-preview" src={Professional} alt=""/></Link>
+                    <button className="camera-button" onClick={() => this.snapPic("http://192.168.1.2:8080/ccapi/ver100/shooting/control/shutterbutton/manual")}><div className="inner-circle"></div></button>
                 </div>
             </div>
         )
