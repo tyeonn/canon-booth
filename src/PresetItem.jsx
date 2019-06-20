@@ -1,6 +1,7 @@
 import React from 'react';
 
 function PresetItem(prop) {
+
     return (
         <div className="preset-image-container">
             <img className="preset-image" src={prop.url}></img>
