@@ -6,11 +6,13 @@ a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
   font-weight:      bold;
+  color: white;
   } 
 a:visited {
   /* Applies to all visited links */
   text-decoration:  none;
   font-weight:      bold;
+  color: white;
   } 
 
 .App-logo {
@@ -225,7 +227,6 @@ a:visited {
 }
 
 .phone-info-bar {
-  z-index: -1;
   background-color: #ff0000;
   height: 63px;
   display: flex;
@@ -319,4 +320,13 @@ a:visited {
 
 #end {
   color: red;
+}
+
+.icon-chevron {
+  position: absolute;
+  left: 15px;
+  top: -7px;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
 }
