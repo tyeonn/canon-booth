@@ -12,14 +12,9 @@ function App() {
     <div className="App">
       <Route path='/' component={PhoneNav}></Route>
       <Switch>
-<<<<<<< HEAD
-        <Route path='/test' component={Booth}></Route>
-        <Route exact path='/' component={Splash}></Route>
-=======
         {/* <Route path='/' component={Splash}></Route> */}
         <Route path='/phone' component={PresetIndex}></Route>
         <Route path='/settings' component={Sample}></Route>
->>>>>>> dante
       </Switch>
     </div>
   );
