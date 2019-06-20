@@ -15,13 +15,10 @@ function App() {
       <Switch>
         {/* <Route path='/' component={Splash}></Route> */}
         <Route path='/phone' component={PresetIndex}></Route>
-        <Route path='/settings' component={Sample}></Route>
-<<<<<<< HEAD
-=======
+        {/* <Route path='/settings' component={Sample}></Route> */}
         <Route path='/test' component={Booth}></Route>
         <Route exact path='/' component={Splash}></Route>
         <Route exact path='/settings' component={Settings}></Route>
->>>>>>> 7906bfdd4c12cd8a4496df312021028ecea7e793
       </Switch>
     </div>
   );

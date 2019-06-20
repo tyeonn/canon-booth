@@ -14,8 +14,12 @@ class Settings extends React.Component {
     render() {
         return (
             <div className="settings-page">
+                <div className="phone-info-bar">
+                    {/* <h1 className="phone-info-description">Choose The Look You Want</h1> */}
+                    {/* <h1 className="phone-info-description">LIFESTYLE</h1> */}
+                    <h1 className="phone-info-description">{this.props.location.state.preset}</h1>
+                </div>
                 <div className="settings-top">
-                    <h2 className="settings-title">Lifestyle</h2>
                     <p className="settings-text">Adjust the filters and see how you look on the photobooth screen! Once you're satisfied, just take a picture using the shutter button below.</p>
                 </div>
                 <div className="settings-options">
