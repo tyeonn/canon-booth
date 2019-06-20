@@ -1,7 +1,7 @@
 import React from 'react';
-import PhoneNav from './PhoneNav';
+// import PhoneNav from './PhoneNav';
 import PresetItem from './PresetItem';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function PresetIndex(prop) {
     return(

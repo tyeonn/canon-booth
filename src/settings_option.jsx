@@ -6,7 +6,7 @@ class SettingsOptions extends React.Component {
     constructor(props, context) {
         super(props, context)
         this.state = {
-            number: 0
+            number: props.number
         }
     }
 
