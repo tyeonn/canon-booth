@@ -2,6 +2,13 @@ import React from 'react';
 // import PhoneNav from './PhoneNav';
 import PresetItem from './PresetItem';
 import { Link } from 'react-router-dom';
+import Classic from './images/classic.jpg';
+import Deep from './images/dark.jpg';
+import Fashion from './images/fashion.jpg';
+import Grayscale from './images/grayscale.jpeg';
+import Lifestyle from './images/lifestyle.jpg';
+import Light from './images/light.jpg';
+import Professional from './images/professional.png';
 
 function PresetIndex(prop) {
     return(
@@ -18,7 +25,7 @@ function PresetIndex(prop) {
                         preset: "Professional"
                     }
                 }}>
-                    <PresetItem title="Professional" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
+                    <PresetItem title="Professional" description="Sharp, clean, and powerful image settings." url={Professional}/>
                 </Link>
                 <Link to={{
                     pathname: '/phone/settings',
@@ -26,7 +33,7 @@ function PresetIndex(prop) {
                         preset: "Lifestyle"
                     }
                 }}>
-                    <PresetItem title="Lifestyle" description="Low saturation and highlight reduction for a more casual feel" url="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2741&q=80"/>
+                    <PresetItem title="Lifestyle" description="Low saturation and highlight reduction for a more casual feel." url={Lifestyle}/>
                 </Link>
                 <Link to={{
                     pathname: '/phone/settings',
@@ -34,7 +41,7 @@ function PresetIndex(prop) {
                         preset: "Grayscale"
                     }
                 }}>
-                    <PresetItem title="Grayscale" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1534385842125-8c9ad0bd123c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
+                    <PresetItem title="Grayscale" description="For those that love the look of black and white photos." url={Grayscale}/>
                 </Link>
                 <Link to={{
                     pathname: '/phone/settings',
@@ -42,10 +49,40 @@ function PresetIndex(prop) {
                         preset: "Fashion"
                     }
                 }}>
-                    <PresetItem title="Fashion" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
+                    <PresetItem title="Fashion" description="High color saturation and wide focus to capture your style." url={Fashion}/>
                 </Link>
-                <PresetItem title="Professional" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
-                <PresetItem title="Lifestyle" description="Low saturation and highlight reduction for a more casual feel" url="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2741&q=80"/>
+                <Link to={{
+                    pathname: '/phone/settings',
+                    state: {
+                        preset: "Classic"
+                    }
+                }}>
+                    <PresetItem title="Classic" description="Lower contrast and faded filtering for a vintage feel" url={Classic} />
+                </Link>
+                <Link to={{
+                    pathname: '/phone/settings',
+                    state: {
+                        preset: "Light"
+                    }
+                }}>
+                    <PresetItem title="Light" description="Bright lights to show off that bright smile" url={Light} />
+                </Link>
+                <Link to={{
+                    pathname: '/phone/settings',
+                    state: {
+                        preset: "Deep"
+                    }
+                }}>
+                    <PresetItem title="Deep" description="Darker tones for those that want a more serious look" url={Deep}/>
+                </Link>
+                <Link to={{
+                    pathname: '/phone/settings',
+                    state: {
+                        preset: "None"
+                    }
+                }}>
+                    <PresetItem title="None" description="You don't need presets and want to adjust settings freely" url="" />
+                </Link>
             </div>
         </div>
     )

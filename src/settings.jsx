@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SettingsOptions from './settings_option';
 import UploadModal from './UploadModal';
+import Professional from './images/professional.png';
 
 class Settings extends React.Component {
 
@@ -40,7 +41,7 @@ class Settings extends React.Component {
                     </div>
                 </div>
                 <div className="settings-footer">
-                    <div className="gallery-button"><img className="gallery-preview" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" alt=""/></div>
+                    <div className="gallery-button"><img className="gallery-preview" src={Professional} alt=""/></div>
                     <button className="camera-button"><div className="inner-circle"></div></button>
                 </div>
             </div>
