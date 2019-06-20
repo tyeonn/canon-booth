@@ -6,6 +6,7 @@ import Booth from './Booth';
 import PresetIndex from './PresetIndex';
 import PhoneNav from './PhoneNav';
 import Sample from './sample';
+import Settings from './settings';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         {/* <Route path='/' component={Splash}></Route> */}
         <Route path='/phone' component={PresetIndex}></Route>
         <Route path='/settings' component={Sample}></Route>
+        <Route path='/test' component={Booth}></Route>
+        <Route exact path='/' component={Splash}></Route>
+        <Route exact path='/settings' component={Settings}></Route>
       </Switch>
     </div>
   );
