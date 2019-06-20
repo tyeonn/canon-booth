@@ -172,7 +172,10 @@ a:visited {
   /* margin-bottom: 68px; */
   width: 200px;
 }
-
+@keyframes opacity-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -181,6 +184,11 @@ a:visited {
     transform: rotate(360deg);
   }
 } */
+.settings-page,
+.preset-index-container {
+  animation: opacity-in 1s;
+  
+}
 
 /* PHONE NAV CSS */
 
@@ -315,6 +323,7 @@ a:visited {
 /* END MODAL */
 
 .modal-overlay {
+  animation: opacity-in 0.5s;
   z-index: 5;
   position: absolute;
   top: 0px;
@@ -324,7 +333,11 @@ a:visited {
   width: 375px;
 }
 
-.end-modal {
+.end-modal-container {
+  z-index: 100;
+}
+#end-modal {
+  animation: opacity-in 0.5s;
   z-index: 10 !important; 
   border: 1px solid grey;
   background-color: #fafafa;
@@ -400,6 +413,7 @@ a:visited {
 }
 
 .camera-button {
+  outline: none;
   border-radius: 100%;
   width: 60px;
   height: 60px;

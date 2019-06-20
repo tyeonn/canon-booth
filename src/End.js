@@ -17,9 +17,9 @@ const handleEnd = (hide) => {
 
 };
 const End = ({ isShowing, hide }) => isShowing ? (
-    <div>
+    <div className='end-modal-container'>
         <div onClick={hide} className="modal-overlay"/>
-        <div className="end-modal">
+        <div id="end-modal">
             <h1 className="end-modal-text">Are you sure you want to end your session?</h1>
             <div className="modal-buttons">
                 <button onClick={hide} id="cancel" className="modal-button">Cancel</button>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function PresetIndex(prop) {
     return(
-        <div>
+        <div className='preset-index-container'>
             {/* <PhoneNav/> */}
             <div className="phone-info-bar">
                 {/* <h1 className="phone-info-description">Choose The Look You Want</h1> */}
