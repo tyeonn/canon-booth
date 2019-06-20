@@ -30,12 +30,12 @@ class Settings extends React.Component {
                     </div>
                     <div className="settings-right-side">
                         <div className="settings-toggle-bar">
-                            <SettingsOptions />
-                            <SettingsOptions />
-                            <SettingsOptions />
-                            <SettingsOptions />
-                            <SettingsOptions />
-                            <SettingsOptions />
+                            <SettingsOptions number={50} />
+                            <SettingsOptions number={42} />
+                            <SettingsOptions number={71} />
+                            <SettingsOptions number={28} />
+                            <SettingsOptions number={63} />
+                            <SettingsOptions number={25} />
                         </div>
                         {/* <div className="settings-toggle-bar"></div> */}
                     </div>
