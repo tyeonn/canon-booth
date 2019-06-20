@@ -31,3 +31,98 @@
     transform: rotate(360deg);
   }
 }
+
+/* PHONE NAV CSS */
+
+.phone-nav {
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid #fafafa;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.phone-nav-logo {
+    max-width: 150px;
+    max-height: 60px;
+}
+
+.preset-image-container {
+  width: 160px;
+  height: 225px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #000000;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preset-image {
+  width: 140px;
+  height: 132px;
+  object-fit:cover;
+}
+
+.phone-preset-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preset-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preset-title {
+  margin:0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.preset-description {
+  margin:0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.red-line {
+  width: 45px;
+  border: solid 1px #ff0000;
+}
+
+.phone-info-bar {
+  background-color: #ff0000;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 62px;
+}
+
+.phone-info-description {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
