@@ -14,10 +14,10 @@ class Settings extends React.Component {
                         <h1 className="icon-chevron"><Link to="/phone">{'<'}</Link></h1>
                     <h1 className="phone-info-description">{this.props.location.state.preset}</h1>
                 </div>
-                <div className="settings-top">
+                {/* <div className="settings-top">
                     <p className="settings-text">Adjust the filters and see how you look on the photobooth screen! Once you're satisfied, just take a picture using the shutter button below.</p>
                     <h2 className="settings-title">Lifestyle&nbsp;<UploadModal /></h2>
-                </div>
+                </div> */}
                 <p className="settings-text">Adjust the filters and see how you look on the photobooth screen! Once you're satisfied, just take a picture using the shutter button below.</p>
                 <div className="settings-options">
                     <div className="settings-left-side">

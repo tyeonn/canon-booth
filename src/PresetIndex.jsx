@@ -13,7 +13,7 @@ function PresetIndex(prop) {
             </div>
             <div className="phone-preset-index">
                 <Link to={{
-                    pathname: '/settings',
+                    pathname: '/phone/settings',
                     state: {
                         preset: "Professional"
                     }
@@ -21,7 +21,7 @@ function PresetIndex(prop) {
                     <PresetItem title="Professional" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
                 </Link>
                 <Link to={{
-                    pathname: '/settings',
+                    pathname: '/phone/ettings',
                     state: {
                         preset: "Lifestyle"
                     }
@@ -29,7 +29,7 @@ function PresetIndex(prop) {
                     <PresetItem title="Lifestyle" description="Low saturation and highlight reduction for a more casual feel" url="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2741&q=80"/>
                 </Link>
                 <Link to={{
-                    pathname: '/settings',
+                    pathname: '/phone/settings',
                     state: {
                         preset: "Grayscale"
                     }
@@ -37,7 +37,7 @@ function PresetIndex(prop) {
                     <PresetItem title="Grayscale" description="Sharp, clean, and powerful image settings." url="https://images.unsplash.com/photo-1534385842125-8c9ad0bd123c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80"/>
                 </Link>
                 <Link to={{
-                    pathname: '/settings',
+                    pathname: '/phone/settings',
                     state: {
                         preset: "Fashion"
                     }

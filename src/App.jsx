@@ -13,10 +13,10 @@ function App() {
       <Route path='/phone' component={PhoneNav}></Route>
       <Switch>
         {/* <Route path='/' component={Splash}></Route> */}
-        <Route path='/phone' component={PresetIndex}></Route>
+        <Route exact path='/phone' component={PresetIndex}></Route>
         <Route path='/test' component={Booth}></Route>
         <Route exact path='/' component={Splash}></Route>
-        <Route exact path='/settings' component={Settings}></Route>
+        <Route exact path='/phone/settings' component={Settings}></Route>
       </Switch>
     </div>
   );
