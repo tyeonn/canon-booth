@@ -10,7 +10,7 @@ import Settings from './settings';
 function App() {
   return (
     <div className="App">
-      <Route path='/' component={PhoneNav}></Route>
+      <Route path='/phone' component={PhoneNav}></Route>
       <Switch>
         {/* <Route path='/' component={Splash}></Route> */}
         <Route path='/phone' component={PresetIndex}></Route>
