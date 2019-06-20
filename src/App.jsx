@@ -1,7 +1,7 @@
 import React from 'react';
 import './stylesheets/App.css';
-import { Route, Link, Switch } from 'react-router-dom';
-import Splash from './splash';
+import { Route, Switch } from 'react-router-dom';
+// import Splash from './splash';
 import Booth from './Booth';
 import PresetIndex from './PresetIndex';
 import PhoneNav from './PhoneNav';
