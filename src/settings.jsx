@@ -1,4 +1,5 @@
 import React from 'react';
+import SettingsOptions from './settings_option';
 
 class Settings extends React.Component {
     constructor(props) {
@@ -27,8 +28,10 @@ class Settings extends React.Component {
                         <p>Shutter&nbsp;Speed</p>
                     </div>
                     <div className="settings-right-side">
-                        <div className="settings-toggle-bar"></div>
-                        <div className="settings-toggle-bar"></div>
+                        <div className="settings-toggle-bar">
+                            <SettingsOptions />
+                        </div>
+                        {/* <div className="settings-toggle-bar"></div> */}
                     </div>
                 </div>
             </div>
