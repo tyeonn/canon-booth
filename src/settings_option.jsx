@@ -8,9 +8,55 @@ class SettingsOptions extends React.Component {
     render() {
         return (
             <div className="settings-option-item">
-                <div className="settings-option-item-bar">
-
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
                 </div>
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
+                </div>
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
+                </div>
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
+                </div>
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
+                </div>
+                <div className="settings-option-item-each">
+                    <div className="settings-option-item-numbers">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div className="settings-option-item-bar"></div>
+                </div>
+                {/* <div className="settings-option-item-bar-drag"></div> */}
             </div>
         )
     }

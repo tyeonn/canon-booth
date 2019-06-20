@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -43,12 +43,12 @@
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  align-items: center;
+  text-align: center;
   /* color: rgb(78, 78, 78); */
 }
 
 .settings-top {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .settings-options {
@@ -64,11 +64,32 @@
   flex-direction: column;
 }
 
+/* .settings-left-side p:first-child {
+  margin-bottom: 5px;
+} */
+
 .settings-right-side {
   display: block;
   margin-left: 10px;
-  margin-bottom: 50px;
-  max-width: 100px;
+  margin-bottom: 40px;
+}
+
+/* .settings-option-item {
+  display: block;
+} */
+
+.settings-option-item-each {
+  /* padding-bottom: 5px; */
+  margin-bottom: 30px;
+}
+
+.settings-option-item-numbers {
+  font-size: 10px;
+  display: flex;
+}
+
+.settings-option-item-numbers p {
+  margin-right: 83px;
 }
 
 .settings-option-item-bar {

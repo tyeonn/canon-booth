@@ -25,7 +25,7 @@ class Settings extends React.Component {
                         <p>Aperature</p>
                         <p>Brightness</p>
                         <p>Contrast</p>
-                        <p>Shutter&nbsp;Speed</p>
+                        {/* <p>Shutter&nbsp;Speed</p> */}
                     </div>
                     <div className="settings-right-side">
                         <div className="settings-toggle-bar">
