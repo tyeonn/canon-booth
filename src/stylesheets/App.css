@@ -457,6 +457,7 @@ a:visited {
   height: calc(100vh - 62px - 15vw);
   margin-left: calc(50vw - (100vh - 62px - 15vw) * 2 / 3);
   overflow: hidden;
+  object-fit: cover;
 }
 
 #gallery-container {

@@ -6,19 +6,19 @@ class Booth extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://192.168.1.2:8080/ccapi/ver100/shooting/liveview", {
-            method: "POST",
-            body: JSON.stringify({
-            liveviewsize: "small",
-            cameradisplay: "on"
-            })
-        });
-        fetch("http://192.168.1.2:8080/ccapi/ver100/shooting/control/af", {
-            method: "POST",
-            body: JSON.stringify({
-                action: "start"
-            })
-        });
+        // fetch("http://192.168.1.2:8080/ccapi/ver100/shooting/liveview", {
+        //     method: "POST",
+        //     body: JSON.stringify({
+        //     liveviewsize: "small",
+        //     cameradisplay: "on"
+        //     })
+        // });
+        // fetch("http://192.168.1.2:8080/ccapi/ver100/shooting/control/af", {
+        //     method: "POST",
+        //     body: JSON.stringify({
+        //         action: "start"
+        //     })
+        // });
     }
 
     render() {
