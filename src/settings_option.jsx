@@ -19,15 +19,15 @@ class SettingsOptions extends React.Component {
     render() {
         let { number } = this.state;
         return (
-            <div className="settings-option-item-each">
-                <Slider className="settings-slider"
-                    value={number}
-                    orientation="horizontal"
-                    onChange={this.handleOnChange}
-                    min={0}
-                    max={100}
-                    step={1}
-                />
+            <div className="settings-option-item">
+                <div className="settings-option-item-each">
+                    <Slider 
+                        className="settings-slider"
+                        value={number}
+                        orientation="horizontal"
+                        onChange={this.handleOnChange}
+                    />
+                </div>
             </div>
         )
     }
@@ -41,55 +41,86 @@ export default SettingsOptions;
 //     }
 
 //     render() {
+//         let { number } = this.state;
 //         return (
-//             <div className="settings-option-item">
-//                 <div className="settings-option-item-each">
+//             <div className="settings-option-item-each">
+//                 <div className="settings-option-item-saturation">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
-//                 <div className="settings-option-item-each">
+//                 <div className="settings-option-item-highlights">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
-//                 <div className="settings-option-item-each">
+//                 <div className="settings-option-item-polarization">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
-//                 <div className="settings-option-item-each">
+//                 <div className="settings-option-item-aperature">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
-//                 <div className="settings-option-item-each">
+//                 <div className="settings-option-item-brightness">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
-//                 <div className="settings-option-item-each">
+//                 <div className="settings-option-item-contrast">
 //                     <div className="settings-option-item-numbers">
 //                         <p>0</p>
 //                         <p>50</p>
 //                         <p>100</p>
 //                     </div>
-//                     <div className="settings-option-item-bar"></div>
+//                     <Slider
+//                         className="settings-slider"
+//                         value={number}
+//                         orientation="horizontal"
+//                         onChange={this.handleOnChange}
+//                     />
 //                 </div>
 //                 {/* <div className="settings-option-item-bar-drag"></div> */}
 //             </div>

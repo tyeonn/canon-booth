@@ -51,6 +51,10 @@
   margin-bottom: 30px;
 }
 
+/* .rangeslider-horizontal .rangeslider__fill {
+  background-color: blue;
+} */
+
 .settings-options {
   display: flex;
 }
@@ -60,7 +64,7 @@
   padding-top: 10px;
   margin-left: 10px;
   margin-bottom: 50px;
-  max-width: 100px;
+  max-width: 110px;
   flex-direction: column;
 }
 
@@ -78,7 +82,7 @@
 }
 
 .settings-option-item-each {
-  margin-bottom: 35px;
+  margin-bottom: 68px;
 }
 
 .settings-option-item-numbers {
@@ -87,19 +91,19 @@
 }
 
 .settings-option-item-numbers p {
-  margin-right: 83px;
+  margin-right: 85px;
 }
 
 .settings-option-item-bar {
   border: 1px solid black;
   border-radius: 5px;
   height: 10px;
-  width: 200px;
+  width: 198px;
   flex-direction: column;
 }
 
 .settings-slider {
-  margin-bottom: 68px;
+  /* margin-bottom: 68px; */
   width: 200px;
 }
 
