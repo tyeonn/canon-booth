@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import SliderBar from './settings_option';
 import SettingsOptions from './settings_option';
 
@@ -21,6 +22,7 @@ class Settings extends React.Component {
                 <div className="phone-info-bar">
                     {/* <h1 className="phone-info-description">Choose The Look You Want</h1> */}
                     {/* <h1 className="phone-info-description">LIFESTYLE</h1> */}
+                        <h1 className="icon-chevron"><Link to="/phone">{'<'}</Link></h1>
                     <h1 className="phone-info-description">{this.props.location.state.preset}</h1>
                 </div>
                 <div className="settings-top">
