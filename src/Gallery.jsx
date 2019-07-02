@@ -15,6 +15,7 @@ class Gallery extends React.Component {
         fetch("http://192.168.1.2:8080/ccapi/ver100/contents/sd/100CANON?type=jpeg")
             .then(resp => resp.json())
             .then(data => {
+                debugger
                 this.setState({
                     image: data["url"][data["url"].length - 1]
                 }) 

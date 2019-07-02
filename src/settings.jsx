@@ -2,21 +2,36 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SettingsOptions from './settings_option';
 import UploadModal from './UploadModal';
-import Professional from './images/professional.png';
+import Profile from './images/profile.png';
 
 class Settings extends React.Component {
 
     constructor(props) {
         super(props);
         this.snapPic = this.snapPic.bind(this);
+        this.state = {
+            thumbnail: Profile,
+        }
     }
 
     snapPic(url) {
         fetch(url, {
             method: 'POST',
             body: JSON.stringify({
+                // action: "full_press",
                 af: true
             })
+        }).then(() => {
+            setTimeout(() => fetch("http://192.168.1.2:8080/ccapi/ver100/contents/sd/100CANON?type=jpeg")
+            .then(resp => resp.json())
+            .then(data => {
+                fetch(data["url"][data["url"].length -1]+"?kind=thumbnail").then(thumbnail => {
+                    debugger 
+                    this.setState({
+                        thumbnail: thumbnail["url"]
+                    })
+                })
+            }), 500);
         })
     }
 
@@ -55,8 +70,8 @@ class Settings extends React.Component {
                     </div>
                 </div>
                 <div className="settings-footer">
-                    <Link to="/phone/gallery" className="gallery-button"><img className="gallery-preview" src={Professional} alt=""/></Link>
-                    <button className="camera-button" onClick={() => this.snapPic("http://192.168.1.2:8080/ccapi/ver100/shooting/control/shutterbutton/manual")}><div className="inner-circle"></div></button>
+                    <Link to="/phone/gallery" className="gallery-button"><img className="gallery-preview" src={this.state.thumbnail} alt="thumbnail"/></Link>
+                    <button className="camera-button" onClick={() => this.snapPic("http://192.168.1.2:8080/ccapi/ver100/shooting/control/shutterbutton")}><div className="inner-circle"></div></button>
                 </div>
             </div>
         )
