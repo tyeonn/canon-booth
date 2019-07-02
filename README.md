@@ -1,6 +1,8 @@
 # Canon Booth - 2nd Place Winner
 ## DeveloperWeek Hackathon 2019  
-![Screenshot](https://github.com/tyeonn/canon-booth/blob/master/src/images/page1.png)
+<p align="center">
+  <img src='https://github.com/tyeonn/canon-booth/blob/master/src/images/page1.png'/>
+</p>
 
 ### [Canon Challenge](http://accelerate.im/challenges/247)  
 Get access to Canon’s all new Camera Control API and develop a creative application of your own. The CCAPI is a RESTful API that connects via Wi-Fi to simplify integration. Create a working application in a clean format. The application must be considered to be the best use case of the CCAPI provided. The application you design is entirely up to you. The most creative and impressive use of Canon’s CCAPI will win. Canon will award efficiency creativity and innovation as the deciding factors in the use case. Essentially use the functionality of the CCAPI to create the best Image Acquisition and/or Remote Camera Control application that you can think of.
@@ -21,12 +23,18 @@ This project is implemented with the following technologies:
 
 ####  Presets
 Users can choose a preset that has the most optimal settings for that type of picture.  
-![Screenshot](https://github.com/tyeonn/canon-booth/blob/master/src/images/page2.png)
+<p align="center">
+  <img src='https://github.com/tyeonn/canon-booth/blob/master/src/images/page2.png'/>
+</p>  
 
 #### Camera Settings
 Using sliders, users can change multiple settings on the camera and view the changes on the screen. After choosing the settings, users can take a picture directly from the mobile device.  
-![Screenshot](https://github.com/tyeonn/canon-booth/blob/master/src/images/page3.png)
+<p align="center">
+  <img src='https://github.com/tyeonn/canon-booth/blob/master/src/images/page3.png'/>
+</p>  
 
 #### Session 
 After taking the perfect picture, users will be able to email the picture to themselves and end the session.  
-![Screenshot](https://github.com/tyeonn/canon-booth/blob/master/src/images/page4.png)
+<p align="center">
+  <img src='https://github.com/tyeonn/canon-booth/blob/master/src/images/page4.png'/>
+</p>
