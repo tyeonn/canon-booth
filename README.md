@@ -4,6 +4,7 @@
 
 # Canon Booth - 2nd Place Winner
 ## DeveloperWeek Hackathon 2019 
+[DevWeek Tweet](https://twitter.com/DevWeekNYC/status/1143262587427151872?s=20)
 ## Team 
 #### Developers: [Dante Cantal](https://github.com/dcantal/), [George Liu](https://github.com/saphknight), [John Kim](https://github.com/jkim820)
 #### UX Designer: [Peter Ku](https://www.peter-ku.com/)  
