@@ -6,7 +6,7 @@
 ## DeveloperWeek Hackathon 2019 (24 Hours)
 [DevWeek Tweet](https://twitter.com/DevWeekNYC/status/1143262587427151872?s=20)
 ## Team 
-#### Developers: [Dante Cantal](https://github.com/dcantal/), [George Liu](https://github.com/saphknight), [John Kim](https://github.com/jkim820)
+#### Developers: [Dante Cantal](https://github.com/dcantal/), [George Liu](https://github.com/georgeliu96), [John Kim](https://github.com/jkim820)
 #### UX Designer: [Peter Ku](https://www.peter-ku.com/)  
 
 ### [Canon Challenge](http://accelerate.im/challenges/247)  
